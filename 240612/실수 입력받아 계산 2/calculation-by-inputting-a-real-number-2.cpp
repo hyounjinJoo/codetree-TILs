@@ -7,7 +7,7 @@ int main()
     float a = 0.f;
     cin >> a;
 
-    a *= 1.5f;
+    a += 1.5f;
 
     cout << fixed;
     cout.precision(2);
