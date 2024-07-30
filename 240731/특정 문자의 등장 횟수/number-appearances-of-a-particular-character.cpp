@@ -28,9 +28,9 @@ int main()
 
     while(FindPos2 != string::npos)
     {        
-        if(InputStr.find("ee", FindPos2) != string::npos)
+        if(InputStr.find("eb", FindPos2) != string::npos)
         {
-            FindPos2 = InputStr.find("ee", FindPos2) + 1;
+            FindPos2 = InputStr.find("eb", FindPos2) + 1;
             ++Count_eb;
         }        
         else
