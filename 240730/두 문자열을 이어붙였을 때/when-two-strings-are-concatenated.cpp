@@ -5,13 +5,17 @@ int main()
 {    
     string Input1, Input2;
 
-    bool Result = false;
-    if((Input1 + Input2) == (Input2 + Input1))
+    cin >> Input1;
+    cin >> Input2;
+
+    if((Input1 + Input2).compare(Input2 + Input1) == 0)
     {
-        Result = true;
+        cout << "true";
+    }
+    else
+    {
+        cout << "false";
     }
 
-    Result ? cout << "true" : cout << "false";
-    
     return 0;
 }
