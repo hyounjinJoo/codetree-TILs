@@ -12,6 +12,8 @@ int main()
 
     int LengthCurrentAlphabet = 0;
     char CurrentAlphabet = 0;
+    // abccdabba    // 9
+    // 
     for(int Idx = 0; Idx < SourceStr.length(); ++Idx)
     {
         if(CurrentAlphabet != SourceStr[Idx])
@@ -33,13 +35,14 @@ int main()
         else
         {
             ++LengthCurrentAlphabet;
+        }
 
-            if(Idx == SourceStr.length() - 1 && CurrentAlphabet == SourceStr[Idx])
-            {
-                string Temp;
-                Temp = CurrentAlphabet + to_string(LengthCurrentAlphabet);
-                DestStr.append(Temp);  
-            }
+        
+        if(Idx == SourceStr.length() - 1)
+        {
+            string Temp;
+            Temp = CurrentAlphabet + to_string(LengthCurrentAlphabet);
+            DestStr.append(Temp);  
         }
     }
 
