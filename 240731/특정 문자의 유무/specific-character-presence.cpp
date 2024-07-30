@@ -7,16 +7,16 @@ int main()
     string InputSrc;
     cin >> InputSrc;
 
-    bool bFirstExist = false;
-    if(InputSrc.find("ee") != string::npos)
+    bool bFirstExist = true;
+    if(InputSrc.find("ee") == string::npos)
     {
-        bFirstExist = true;
+        bFirstExist = false;
     }
 
-    bool bSecondExist = false;
-    if(InputSrc.find("ab") != string::npos)
+    bool bSecondExist = true;
+    if(InputSrc.find("ab") == string::npos)
     {
-        bFirstExist = true;
+        bSecondExist = false;
     }
 
     bFirstExist ? cout << "Yes" : cout << "No";    
