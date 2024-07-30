@@ -34,7 +34,7 @@ int main()
         {
             ++LengthCurrentAlphabet;
 
-            if(Idx == SourceStr.length() - 1)
+            if(Idx == SourceStr.length() - 1 && CurrentAlphabet == SourceStr[Idx])
             {
                 string Temp;
                 Temp = CurrentAlphabet + to_string(LengthCurrentAlphabet);
