@@ -6,9 +6,9 @@ using namespace std;
 
 void SlideRight(string& OriginSTR)
 {
-	char First = OriginSTR[0];
-	OriginSTR = OriginSTR.substr(1, OriginSTR.size() - 1);
-	OriginSTR.push_back(First);
+	char First = OriginSTR[OriginSTR.size() - 1];
+	OriginSTR = OriginSTR.substr(0, OriginSTR.size() - 1);
+	OriginSTR.insert(OriginSTR.begin(), First);
 }
 
 int main() {
