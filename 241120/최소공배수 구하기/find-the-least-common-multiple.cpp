@@ -19,7 +19,7 @@ int FindGCD(const int InN, const int InM)
 
 int FindLCM(const int InGCD, const int InN, const int InM)
 {
-    int LCM = (InN / InGCD) * (InM / InGCD) * InGCD;
+    int LCM = InN * InM / InGCD;
 
     return LCM;
 }
