@@ -6,7 +6,7 @@ int main()
 {
     int CountA, CountB;
     vector<int> N1, N2;
-    
+
     cin >> CountA >> CountB;
 
     N1.resize(CountA);
@@ -25,7 +25,7 @@ int main()
     bool Result = true;
     for(int FirstIDX = 0; FirstIDX < CountA; ++FirstIDX)
     {
-        bool Result = true;
+        Result = true;
         for(int SecondIDX = 0; SecondIDX < CountB; ++SecondIDX)
         {
             int N1Idx = FirstIDX + SecondIDX;
