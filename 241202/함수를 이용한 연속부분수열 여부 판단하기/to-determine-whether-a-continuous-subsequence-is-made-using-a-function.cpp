@@ -6,6 +6,9 @@ int main()
 {
     int CountA, CountB;
     vector<int> N1, N2;
+    
+    cin >> CountA >> CountB;
+
     N1.resize(CountA);
     N2.resize(CountB);
 
