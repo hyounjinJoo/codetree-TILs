@@ -3,8 +3,7 @@ using namespace std;
 
 void IsExistOverTwoDifferentLetterInSTR(const string& InSTR)
 {
-    // 첫번째 char 세팅
-    // bool 변수 하나 설정 (false)
+    // 첫번째 char 세팅, 두번째 char 세팅
     // 반복문
     char FirstLetter = InSTR[0];
     char SecondLetter = InSTR[0];
